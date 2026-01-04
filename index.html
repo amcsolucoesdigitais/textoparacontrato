@@ -7,13 +7,16 @@
 
   <style>
     :root{
-      --bg:#f4f5f8;
+      --bg:#f4f6fb;
       --card:#ffffff;
       --stroke:rgba(20,30,50,.12);
       --text:#0e1625;
       --muted:#5f6b7a;
-      --gold:#c9a33b;
-      --gold-soft:rgba(201,163,59,.14);
+
+      /* AZUL CLARO PREMIUM */
+      --blue:#5fa8ff;
+      --blue-soft:rgba(95,168,255,.16);
+
       --shadow:0 24px 50px rgba(14,22,37,.12);
       --radius:30px;
     }
@@ -26,8 +29,8 @@
       font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
       color:var(--text);
       background:
-        radial-gradient(800px 420px at 50% 0%, rgba(201,163,59,.18), transparent 60%),
-        linear-gradient(180deg, #eef0f4, #f7f8fb);
+        radial-gradient(800px 420px at 50% 0%, rgba(95,168,255,.22), transparent 60%),
+        linear-gradient(180deg, #eef2f8, #f7f9fc);
       display:flex;
       align-items:center;
       justify-content:center;
@@ -41,65 +44,59 @@
       border:1px solid var(--stroke);
       border-radius:var(--radius);
       box-shadow:var(--shadow);
-      padding:34px 36px 32px;
+      padding:38px 40px 34px;
     }
 
     /* LOGO PREMIUM CENTRAL */
     .logo-wrap{
       display:flex;
       justify-content:center;
-      margin-bottom:18px;
+      margin-bottom:22px;
     }
 
     .logo-premium{
-      padding:14px 28px;
+      padding:18px 36px;
       border-radius:999px;
-      border:1px solid rgba(201,163,59,.35);
+      border:1px solid rgba(95,168,255,.45);
       background:
-        linear-gradient(180deg, rgba(255,255,255,.9), rgba(255,255,255,.7));
+        linear-gradient(180deg, rgba(255,255,255,.95), rgba(255,255,255,.8));
       box-shadow:
-        inset 0 0 0 1px rgba(255,255,255,.6),
-        0 10px 26px rgba(201,163,59,.18);
+        inset 0 0 0 1px rgba(255,255,255,.7),
+        0 14px 32px rgba(95,168,255,.22);
     }
 
     .logo-premium img{
-      height:36px;
+      height:48px; /* LOGO MAIOR */
       display:block;
     }
 
     header{
       text-align:center;
-      margin-bottom:26px;
+      margin-bottom:28px;
     }
 
     header h1{
       margin:0;
-      font-size:19px;
+      font-size:19.5px;
       font-weight:700;
       letter-spacing:.2px;
-    }
-
-    header p{
-      margin:6px 0 0;
-      font-size:13.5px;
-      color:var(--muted);
     }
 
     /* ABAS PREMIUM */
     .tabs{
       display:flex;
       gap:14px;
-      margin-bottom:20px;
+      margin-bottom:22px;
     }
 
     .tab{
       flex:1;
-      padding:16px 22px;
+      padding:18px 24px;
       border-radius:999px;
       border:1px solid var(--stroke);
-      background:#f7f8fb;
+      background:#f7f9fd;
       font-weight:700;
-      font-size:13.5px;
+      font-size:13.8px;
       color:var(--text);
       cursor:pointer;
       transition:.18s ease;
@@ -111,46 +108,46 @@
     }
 
     .tab.active{
-      background:var(--gold-soft);
-      border-color:var(--gold);
-      box-shadow:0 0 0 4px rgba(201,163,59,.12);
+      background:var(--blue-soft);
+      border-color:var(--blue);
+      box-shadow:0 0 0 4px rgba(95,168,255,.14);
     }
 
     /* TEXTO COM CARA DE CONTRATO */
     textarea{
       width:100%;
-      min-height:340px;
+      min-height:360px;
       border-radius:22px;
       border:1px solid var(--stroke);
       background:#ffffff;
-      padding:22px;
+      padding:24px;
       font-family: "Times New Roman", Georgia, serif;
-      font-size:14.5px;
-      line-height:1.7;
+      font-size:14.6px;
+      line-height:1.75;
       color:#111827;
       resize:vertical;
       outline:none;
     }
 
     textarea:focus{
-      border-color:var(--gold);
-      box-shadow:0 0 0 4px rgba(201,163,59,.12);
+      border-color:var(--blue);
+      box-shadow:0 0 0 4px rgba(95,168,255,.14);
     }
 
     /* BOTÃO PREMIUM */
     .actions{
       display:flex;
       justify-content:flex-end;
-      margin-top:22px;
+      margin-top:26px;
     }
 
     .btn{
-      padding:14px 26px;
+      padding:14px 30px;
       border-radius:14px;
-      border:1px solid var(--gold);
+      border:1px solid var(--blue);
       background:
-        linear-gradient(180deg, rgba(201,163,59,.35), rgba(201,163,59,.18));
-      color:#3a2c00;
+        linear-gradient(180deg, rgba(95,168,255,.40), rgba(95,168,255,.22));
+      color:#0b2b55;
       font-weight:800;
       font-size:13.5px;
       cursor:pointer;
@@ -159,7 +156,7 @@
 
     .btn:hover{
       transform:translateY(-1px);
-      box-shadow:0 6px 18px rgba(201,163,59,.28);
+      box-shadow:0 8px 22px rgba(95,168,255,.35);
     }
 
   </style>
@@ -177,7 +174,6 @@
 
     <header>
       <h1>Texto a ser inserido no contrato conforme modalidade de venda</h1>
-      
     </header>
 
     <!-- GARANTIA EM DOBRO À ESQUERDA / OUTLET À DIREITA -->
